@@ -1,291 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-
-    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Balthazar&display=swap");
 
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: "Balthazar", serif;
-  font-weight: 800;
-  font-style: normal;
-            
-        }
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Balthazar", serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         margin-bottom: 2px;
-        }
-        li{
-           list-style: none;;
-            margin: 10px;
-            padding: 23px;
-            font-size: 20px;
-        }
-        a{
-            text-decoration: none;
-            color:white;
-            font-size: larger;
-        }
-        a:hover{
-            color: black;
-        }
-        #s1{
-            /* position:sticky;
+      }
+      li {
+        list-style: none;
+        margin: 10px;
+        padding: 23px;
+        font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+      }
+      a:hover {
+        color: black;
+      }
+      #s1 {
+        /* position:sticky;
             top: 0px;
             margin-bottom: 5px; */
-        }
-        .container3{
-            display: flex;
-            justify-content: center;
-            margin: auto;
-            width: 98vw;
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,9,121,1) 0%, rgba(0,255,235,1) 100%);
-            margin-top: 2px;
-            border-radius: 10px;
-        }
-    .container5{
+      }
+      .container3 {
         display: flex;
         justify-content: center;
-        
-    }
-    .container4 ul li{
+        margin: auto;
+        width: 98vw;
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(38, 9, 121, 1) 0%,
+          rgba(0, 255, 235, 1) 100%
+        );
+        margin-top: 2px;
+        border-radius: 10px;
+      }
+      .container5 {
+        display: flex;
+        justify-content: center;
+      }
+      .container4 ul li {
         font-size: 25px;
-
-    }
-    .container4 ul li a{
-        color:black;
+      }
+      .container4 ul li a {
+        color: black;
         text-decoration: none;
         font-size: 25px;
-    }
-    img {
-  opacity: 0.5;
-}
-        </style>
-</head>
-<body>
-    <section id="s1" style="width: 98vw; margin: auto; border-radius: 8px; margin-top: 10px;">
-       <nav class="nav1" style="background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,14,0.9528186274509804) 0%, rgba(0,212,255,1) 100%);">    
+      }
+      img {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      id="s1"
+      style="width: 98vw; margin: auto; border-radius: 8px; margin-top: 10px"
+    >
+      <nav
+        class="nav1"
+        style="
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 121, 14, 0.9528186274509804) 0%,
+            rgba(0, 212, 255, 1) 100%
+          );
+        "
+      >
         <ul>
-       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40px" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
-                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-              </svg><h3 style="padding-right:23px; font-size: 3.75rem; position: relative; left: -136px;">Topic</h3>
-                    <li><a href="#s1">Home</a></li>
-                    <li><a href="#s2">Browse topics</a></li>
-                    <li><a href="#s3">FAQS</a></li>
-                    <li><a href="#s4">Contact Us</a></li>
-                </ul>
-            </nav>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40px"
+            fill="currentColor"
+            class="bi bi-box"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+            />
+          </svg>
+          <h3
+            style="
+              padding-right: 23px;
+              font-size: 3.75rem;
+              position: relative;
+              left: -136px;
+            "
+          >
+            Topic
+          </h3>
+          <li><a href="#s1">Home</a></li>
+          <li><a href="#s2">Browse topics</a></li>
+          <li><a href="#s3">FAQS</a></li>
+          <li><a href="#s4">Contact Us</a></li>
+        </ul>
+      </nav>
     </section>
-    <section id="s1" style="background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,14,0.9528186274509804) 0%, rgba(0,212,255,1) 100%);width: 98vw; margin: auto; border-radius: 8px;">
-    <div class="container2" style="text-align: center; margin-top: 5px;background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,14,0.9528186274509804) 0%, rgba(0,212,255,1) 100%);width: 98vw; margin: auto;">
-        <h1 style="color: white; font-size:100px; padding: 20px;">Discover.Learn.Enjoy</h1>
-        <h3 style="color:aqua ;">platforms for coders to learn coding</h3>
-        <br>
-        <br>
+    <section
+      id="s1"
+      style="
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 121, 14, 0.9528186274509804) 0%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        width: 98vw;
+        margin: auto;
+        border-radius: 8px;
+      "
+    >
+      <div
+        class="container2"
+        style="
+          text-align: center;
+          margin-top: 5px;
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 121, 14, 0.9528186274509804) 0%,
+            rgba(0, 212, 255, 1) 100%
+          );
+          width: 98vw;
+          margin: auto;
+        "
+      >
+        <h1 style="color: white; font-size: 100px; padding: 20px">
+          Discover.Learn.Enjoy
+        </h1>
+        <h3 style="color: aqua">platforms for coders to learn coding</h3>
+        <br />
+        <br />
         <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="button" class="btn btn-primary">click here</button>
-          </form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-          
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="button" class="btn btn-primary">click here</button>
+        </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </section>
+    <div class="container3">
+      <div
+        class="card"
+        style="
+          width: 20rem;
+          margin-right: 70px;
+          padding: 23px;
+          border: 2px solid black;
+          border-radius: 10px;
+          margin-top: -70px;
+          background-color: rgb(30, 224, 224);
+          box-shadow: 10px 10px 10px 10px;
+        "
+      >
+        <div class="card-body">
+          <h1 class="card-title" style="color: white; text-align: center">
+            Web design
+          </h1>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            maxime expedita nihil quae. Incidunt est, soluta dolorem tempore
+            enim sit, nihil cumque officia exercitationem iste adipisci dolore,
+            commodi perferendis iusto quas! Ab, ipsam deserunt.
+          </p>
+        </div>
+      </div>
+      <div
+        class="card"
+        style="
+          width: 20rem;
+          padding: 23px;
+          border: 2px solid black;
+          border-radius: 10px;
+          margin-top: -70px;
+          background-color: rgb(69, 192, 151);
+          box-shadow: 10px 10px 10px 10px;
+        "
+      >
+        <div class="card-body">
+          <h1 class="card-title" style="color: white; text-align: center">
+            Finance
+          </h1>
+          <p class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+            delectus sed repellendus deleniti molestias voluptas molestiae ipsum
+            quae est, ratione voluptate quo magnam facilis deserunt aliquid
+            temporibus? Officia ratione sit, maiores modi quasi facere est!
+          </p>
+        </div>
+      </div>
     </div>
-</section>
-<div class="container3">
-    <div class="card" style="width: 20rem; margin-right: 70px; padding: 23px;border:2px solid black; border-radius: 10px;margin-top:-70px; background-color: rgb(30, 224, 224);box-shadow: 10px 10px 10px 10px;">
-        <div class="card-body">
-          <h1 class="card-title" style="color: white;text-align: center;">Web design</h1>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam maxime expedita nihil quae. Incidunt est, soluta dolorem tempore enim sit, nihil cumque officia exercitationem iste adipisci dolore, commodi perferendis iusto quas! Ab, ipsam deserunt.</p>
-          
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;padding: 23px;border:2px solid black; border-radius: 10px;margin-top:-70px;background-color: rgb(69, 192, 151);box-shadow: 10px 10px 10px 10px;">
-        <div class="card-body">
-          <h1 class="card-title" style="color: white;text-align: center;">Finance</h1>
-          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum delectus sed repellendus deleniti molestias voluptas molestiae ipsum quae est, ratione voluptate quo magnam facilis deserunt aliquid temporibus? Officia ratione sit, maiores modi quasi facere est!</p>
-          
-        </div>
-      </div>
-    
-</div>
-<br>
-<div class="container4" id="s2">
-    <h2 style="text-align: center; font-size: 50px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Browse Topics</h2>
-    <br>
-    <ul>
+    <br />
+    <div class="container4" id="s2">
+      <h2
+        style="
+          text-align: center;
+          font-size: 50px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        "
+      >
+        Browse Topics
+      </h2>
+      <br />
+      <ul>
         <li><a href="#blank">Web design</a></li>
         <li><a href="#blank">Marketing</a></li>
         <li><a href="#blank">Finance</a></li>
         <li><a href="#blank">Music</a></li>
-    </ul>
-    <hr color="black">
-    <br>
-    <div class="container5">
-        <div class="card" style="width: 21rem;height:35vh; margin-right:40px;padding:23px;background: url(https://img.freepik.com/free-vector/illustration-social-media-concept_53876-18383.jpg?w=740&t=st=1710953251~exp=1710953851~hmac=591ac440af8fd2be8083cd8c2aa3184923aefd5c9464d487081f9ff55846bd2c);opacity: 0.95; box-shadow: 10px 10px 10px 10px;">
-            <div class="card-body">
-              <h1 class="card-title" style="font-size: 40px;">Web Design</h1>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quia quis ut earum voluptates consequatur cupiditate odit alias blanditiis libero nihil dolores quod aut, autem laudantium voluptatum tenetur, voluptate natus totam dolorum cumque laborum?</p>
-        
-            </div>
+      </ul>
+      <hr color="black" />
+      <br />
+      <div class="container5">
+        <div
+          class="card"
+          style="
+            width: 21rem;
+            height: 35vh;
+            margin-right: 40px;
+            padding: 23px;
+            background: url(https://img.freepik.com/free-vector/illustration-social-media-concept_53876-18383.jpg?w=740&t=st=1710953251~exp=1710953851~hmac=591ac440af8fd2be8083cd8c2aa3184923aefd5c9464d487081f9ff55846bd2c);
+            opacity: 0.95;
+            box-shadow: 10px 10px 10px 10px;
+          "
+        >
+          <div class="card-body">
+            <h1 class="card-title" style="font-size: 40px">Web Design</h1>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quia
+              quis ut earum voluptates consequatur cupiditate odit alias
+              blanditiis libero nihil dolores quod aut, autem laudantium
+              voluptatum tenetur, voluptate natus totam dolorum cumque laborum?
+            </p>
           </div>
-          <div class="card" style="width: 21rem;height:35vh; margin-right:70px; padding:23px; background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HSqFTOxBsMkj1YoPd_AbaIwPX3AvliNO9Q&usqp=CAU); opacity: 0.95; box-shadow: 10px 10px 10px 10px;">
-            <div class="card-body">
-              <h1 class="card-title " style="color: brown; font-size: 40px;">Graphics</h1>
-              <p class="card-text " style="color: brown;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, doloribus sed nobis nostrum quibusdam molestias alias illum sequi quasi accusantium blanditiis placeat voluptates tempora eveniet facilis sit, laborum deleniti voluptatem.</p>
-        
-            </div>
+        </div>
+        <div
+          class="card"
+          style="
+            width: 21rem;
+            height: 35vh;
+            margin-right: 70px;
+            padding: 23px;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HSqFTOxBsMkj1YoPd_AbaIwPX3AvliNO9Q&usqp=CAU);
+            opacity: 0.95;
+            box-shadow: 10px 10px 10px 10px;
+          "
+        >
+          <div class="card-body">
+            <h1 class="card-title" style="color: brown; font-size: 40px">
+              Graphics
+            </h1>
+            <p class="card-text" style="color: brown">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, doloribus sed nobis nostrum quibusdam molestias alias
+              illum sequi quasi accusantium blanditiis placeat voluptates
+              tempora eveniet facilis sit, laborum deleniti voluptatem.
+            </p>
           </div>
-          <div class="card" style="width: 21rem;height:35vh; padding:23px; background-image: url(https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg?size=626&ext=jpg); opacity: 0.95;box-shadow: 10px 10px 10px 10px;">
-            <div class="card-body">
-              <h1 class="card-title" style="color:white;font-size: 40px;">Logo designer</h1>
-              <p class="card-title" style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat aliquam, hic dolor est dolores facilis aspernatur culpa facere, sed rem, nulla fuga inventore dignissimos aperiam eius dolorem labore. Quidem aliquid perspiciatis minima laborum hic?</p>
-            </div>
+        </div>
+        <div
+          class="card"
+          style="
+            width: 21rem;
+            height: 35vh;
+            padding: 23px;
+            background-image: url(https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg?size=626&ext=jpg);
+            opacity: 0.95;
+            box-shadow: 10px 10px 10px 10px;
+          "
+        >
+          <div class="card-body">
+            <h1 class="card-title" style="color: white; font-size: 40px">
+              Logo designer
+            </h1>
+            <p class="card-title" style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus repellat aliquam, hic dolor est dolores facilis
+              aspernatur culpa facere, sed rem, nulla fuga inventore dignissimos
+              aperiam eius dolorem labore. Quidem aliquid perspiciatis minima
+              laborum hic?
+            </p>
           </div>
+        </div>
       </div>
-</div>
-<br>
-<section class="faq-section section-padding" id="s3">
-    <div class="container">
+    </div>
+    <br />
+    <section class="faq-section section-padding" id="s3">
+      <div class="container">
         <div class="row">
+          <div class="col-lg-6 col-12">
+            <h2 class="mb-4">Frequently Asked Questions</h2>
+          </div>
 
-            <div class="col-lg-6 col-12">
-                <h2 class="mb-4">Frequently Asked Questions</h2>
-            </div>
+          <div class="clearfix"></div>
 
-             <div class="clearfix"></div>
+          <div class="col-lg-5 col-12">
+            <img
+              src="https://cdn.shopify.com/app-store/listing_images/be8e18fe7fd62b265563360c2986633d/promotional_image/CLHpktmI5_QCEAE=.jpeg?height=720&quality=90&width=1280"
+              class="img-fluid"
+              alt="Image not found"
+            />
+          </div>
 
-            <div class="col-lg-5 col-12">
-                <img src="https://cdn.shopify.com/app-store/listing_images/be8e18fe7fd62b265563360c2986633d/promotional_image/CLHpktmI5_QCEAE=.jpeg?height=720&quality=90&width=1280" class="img-fluid" alt="FAQs">
-            </div>
+          <div class="col-lg-6 m-auto">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    What is Topic Listing?
+                  </button>
+                </h2>
 
-            <div class="col-lg-6 m-auto">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            What is Topic Listing?
-                            </button>
-                        </h2>
-
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Topic Listing is free Bootstrap 5 CSS template.You are not allowed to redistribute this template on any other template collection website without our permission. Please contact TemplateMo for more detail. Thank you.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How to find a topic?
-                        </button>
-                        </h2>
-
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                You can search on Google with <strong>keywords</strong> such as templatemo portfolio, templatemo one-page layouts, photography, digital marketing, etc.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Does it need to paid?
-                        </button>
-                        </h2>
-
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Topic Listing is free Bootstrap 5 CSS template.You are not
+                    allowed to redistribute this template on any other template
+                    collection website without our permission. Please contact
+                    TemplateMo for more detail. Thank you.
+                  </div>
                 </div>
-            </div>
+              </div>
 
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How to find a topic?
+                  </button>
+                </h2>
+
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can search on Google with <strong>keywords</strong> such
+                    as templatemo portfolio, templatemo one-page layouts,
+                    photography, digital marketing, etc.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Does it need to paid?
+                  </button>
+                </h2>
+
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can modify any of this with custom CSS or overriding our
+                    default variables. It's also worth noting that just about
+                    any HTML can go within the.accordion-body,
+                    though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-<br>
-<section class="contact-section section-padding section-bg bg-secondary" id="s4">
-    <div class="container">
+      </div>
+    </section>
+    <br />
+    <section
+      class="contact-section section-padding section-bg bg-secondary"
+      id="s4"
+    >
+      <div class="container">
         <div class="row">
+          <div class="col-lg-12 col-12 text-center">
+            <h2 class="mb-5">Get in touch</h2>
+          </div>
 
-            <div class="col-lg-12 col-12 text-center">
-                <h2 class="mb-5">Get in touch</h2>
-            </div>
+          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.065641062665!2d-122.4230416990949!3d37.80335401520422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127459fabad%3A0x808ba520e5e9edb7!2sFrancisco%20Park!5e1!3m2!1sen!2sth!4v1684340239744!5m2!1sen!2sth"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
 
-            <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.065641062665!2d-122.4230416990949!3d37.80335401520422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127459fabad%3A0x808ba520e5e9edb7!2sFrancisco%20Park!5e1!3m2!1sen!2sth!4v1684340239744!5m2!1sen!2sth" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+            <h4 class="mb-3">Head office</h4>
 
-            <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                <h4 class="mb-3">Head office</h4>
+            <p>
+              Bay St &amp;, Larkin St, San Francisco, CA 94109, United States
+            </p>
 
-                <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p>
+            <hr />
 
-                <hr>
+            <p class="d-flex align-items-center mb-1">
+              <span class="me-2">Phone</span>
 
-                <p class="d-flex align-items-center mb-1">
-                    <span class="me-2">Phone</span>
+              <a
+                href="tel: 305-240-9671"
+                class="site-footer-link"
+                style="color: black"
+              >
+                305-240-9671
+              </a>
+            </p>
 
-                    <a href="tel: 305-240-9671" class="site-footer-link" style="color:black">
-                        305-240-9671
-                    </a>
-                </p>
+            <p class="d-flex align-items-center">
+              <span class="me-2">Email</span>
 
-                <p class="d-flex align-items-center">
-                    <span class="me-2">Email</span>
+              <a
+                href="mailto:info@company.com"
+                class="site-footer-link"
+                style="color: black"
+              >
+                abc@company.com
+              </a>
+            </p>
+          </div>
 
-                    <a href="mailto:info@company.com" class="site-footer-link" style="color: black;">
-                        abc@company.com
-                    </a>
-                </p>
-            </div>
+          <div class="col-lg-3 col-md-6 col-12 mx-auto">
+            <h4 class="mb-3">Dubai office</h4>
 
-            <div class="col-lg-3 col-md-6 col-12 mx-auto">
-                <h4 class="mb-3">Dubai office</h4>
+            <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
 
-                <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
+            <hr />
 
-                <hr>
+            <p class="d-flex align-items-center mb-1">
+              <span class="me-2">Phone</span>
 
-                <p class="d-flex align-items-center mb-1">
-                    <span class="me-2">Phone</span>
+              <a href="#blank" class="site-footer-link" style="color: black">
+                110-220-3400
+              </a>
+            </p>
 
-                    <a href="blank" class="site-footer-link" style="color: black;">
-                        110-220-3400
-                    </a>
-                </p>
+            <p class="d-flex align-items-center">
+              <span class="me-2">Email</span>
 
-                <p class="d-flex align-items-center">
-                    <span class="me-2">Email</span>
-
-                    <a href="mailto:info@company.com" class="site-footer-link" style="color: black;">
-                        xyz@company.com
-                    </a>
-                </p>
-            </div>
-
+              <a
+                href="mailto:info@company.com"
+                class="site-footer-link"
+                style="color: black"
+              >
+                xyz@company.com
+              </a>
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-
-    
-</body>
+      </div>
+    </section>
+  </body>
 </html>
